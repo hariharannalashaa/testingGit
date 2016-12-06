@@ -11,7 +11,7 @@ ul li {
 	list-style: none;
 }
 .btn-style {
-    background-color: #ea6060;
+    background-color: #c0392b;
     border-color: -moz-use-text-color -moz-use-text-color #a83007;
     border-radius: 4px;
     border-style: none none solid;
@@ -21,6 +21,10 @@ ul li {
     font-size: 15px;
 }
 
+.btn-style:hover {
+	background-color: #7f8c8d;
+}
+
 /*Time Sheet*/
 
 .content {
@@ -28,11 +32,26 @@ ul li {
     padding: 20px;
 }
 
+.history {
+    font-size:16px;
+    color:#c0392b;
+    margin-bottom:10px;
+}
+.history i{
+    padding:0 5px;
+    font-weight:bold;
+    font-size:20px;
+}
+
 /*TimeSheet Table*/
 
 .table-responsive {
 	min-height: 0.01%;
 	overflow-x: auto;
+}
+
+.table-responsive > .table{
+        margin-top: 40px !important;
 }
 
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
@@ -52,7 +71,7 @@ td, th {
 }
 
 tr:nth-child(2n+1) > th {
-	background-color: #f3f7f9;
+	background-color: #ecf0f1;
 	color: #44748b;
 	font-size: 14px;
 	font-weight: 400;
@@ -63,6 +82,7 @@ table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bord
 	border-top: 1px solid #ddd;
 	border-right: 0;
 	border-left: 0;
+    padding: 6px !important;
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
@@ -81,19 +101,20 @@ table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bord
 /*components in table*/
 select {
     -moz-appearance: none;
+    -webkit-appearance: none; 
     background: #efefef none repeat scroll 0 0;
     border: 0 none;
     border-radius: 0;
     box-shadow: none;
     box-sizing: border-box;
-    color: #427087;
+    color: #ecf0f1;
     display: inline-block;
-    font-size: 15px;
+    font-size: 12px;
     height: 30px;
     margin: 0;
     max-width: 100px;
     padding: 1px 3px;
-    width: 80px;
+    width: 60px;
 }
 
 select.classic {
