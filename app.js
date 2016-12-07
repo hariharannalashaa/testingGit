@@ -1,11 +1,8 @@
 angular.module('timeSheet',
  [
     'ui.router',
-    'oc.lazyLoad',
-    'chart.js',
-    'angular-input-stars',
-    'ngMaterial'
-]).config(function($ocLazyLoadProvider,$stateProvider,$urlRouterProvider){
+    'oc.lazyLoad'
+   ]).config(function($ocLazyLoadProvider,$stateProvider,$urlRouterProvider){
     
         $urlRouterProvider.otherwise('/timesheet');
     
@@ -51,3 +48,16 @@ angular.module('timeSheet')
             // do something
         });
 });
+
+
+// General Code 
+Date.prototype.monthNames = [
+    "January", "February", "March",
+    "April", "May", "June",
+    "July", "August", "September",
+    "October", "November", "December"
+];
+
+Date.prototype.getMonthName = function() {
+    return this.monthNames[this.getMonth()];
+};
