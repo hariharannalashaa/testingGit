@@ -30,8 +30,18 @@ angular.module('timeSheet',
             resolve:{
                 dependancies:function($ocLazyLoad){
                     return $ocLazyLoad.load([
-                        '/app/TimeSheet/timesheetCtrl.js'
+                        '/app/TimeSheet/timesheetCtrl.js',
+                        '/app/TimeSheet/timesheetFactory.js'
                         ]);
+                },
+                timeSheetData : function(dependancies,TimeSheetFactory){
+                   return TimeSheetFactory.getTimeSheet();
+                },
+                projects : function(dependancies,TimeSheetFactory){
+                   return TimeSheetFactory.getProjects();
+                },
+                tasks : function(dependancies,TimeSheetFactory){
+                   return TimeSheetFactory.getTasks();
                 }
             }
         });

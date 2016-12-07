@@ -1,11 +1,13 @@
-var timesheetCtrl = function(){
+var timesheetCtrl = function(TimeSheetFactory,timeSheetData,projects,tasks){
     
     var that = this;
-    
     var currentDate = new Date();
     that.displayMonth = currentDate.getMonthName();
     that.timeSheet = {};
     generateDateForMonth();
+    that.projects = timeSheetData.distinctProjects;
+    that.projectlist = projects;
+    that.taskList = tasks;
     
     function changeMonth(forward){
         if(forward){
