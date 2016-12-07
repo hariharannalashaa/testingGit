@@ -1,220 +1,57 @@
 <div id="content" class="content">
+
   <div class="table-responsive ">
-  <div class="text-right history col-md-6"><a href="#"><i class="fa fa-angle-left"></i></a> {{viewObj.displayMonth}} <a href="#"><i class="fa fa-angle-right"></i></a></div>
-  <div class="text-right col-md-6 r-padding"><a href="#" title="Add Row"><i class="fa fa-plus btn-style"></i></a></div>
+  
+  <div class="text-right dateDisplay col-md-7">
+      <a ng-click="viewObj.changeMonth(false)"><i class="fa fa-angle-left"></i></a> 
+      <div>{{viewObj.displayMonth}}</div> 
+      <a ng-click="viewObj.changeMonth(true)"><i class="fa fa-angle-right"></i></a>
+  </div>
+      
+  <div class="text-right col-md-5 r-padding"><a href="#" title="Add Row"><i class="fa fa-plus btn-style"></i></a></div>
     <table class="table table-bordered">
       <thead>
         <tr>
           <th>Project</th>
           <th>Task</th>
           <th>Description</th>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-          <th>6</th>
-          <th>7</th>
-          <th>8</th>
-          <th>9</th>
-          <th>10</th>
-          <th>11</th>
-          <th>12</th>
-          <th>13</th>
-          <th>14</th>
-          <th>15</th>
-          <th>16</th>
-          <th>17</th>
-          <th>18</th>
-          <th>19</th>
-          <th>20</th>
-          <th>21</th>
-          <th>22</th>
-          <th>23</th>
-          <th>24</th>
-          <th>25</th>
-          <th>26</th>
-          <th>27</th>
-          <th>28</th>
-          <th>29</th>
-          <th>30</th>
-          <th>31</th>
+          <th ng-repeat="date in viewObj.timeSheet">{{date.displayDate}}</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr  ng-repeat="row in [1,2,3,4,5]">
           <td><select>
               <option>mediport</option>
             </select></td>
           <td><select>
               <option>mediport</option>
             </select></td>
-          <td><select>
-              <option>mediport</option>
-            </select></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
-          <td><a href="#" data-toggle="tooltip" title="Hooray!">
-            <button type="button" class="description-btn" data-toggle="modal" data-target="#myModal" title="Desription"><i class="fa fa-plus"></i></button>
-            </a>
-            <input type="text"></td>
+          <td>
+              <input class="descriptionInput" type="text">
+          </td>
+          <td ng-repeat="column in viewObj.timeSheet">
+            <input class="timeInput" type="number" name="quantity" min="1" max="5">
+          </td>
         </tr>
         <tr>
-          <td colspan="3" align="right"><h6>Total</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
-          <td><h6>3</h6></td>
+          <td colspan="3" align="right"><h6>Total Hours</h6></td>
+           <td>
+            <input  type="checkbox" aria-label="Slave input">
+          </td>     
+        </tr>
+        <tr>
+          <td colspan="3" align="right"><h6>Submit</h6></td>
+          <td>
+            <input  type="checkbox" aria-label="Slave input">
+          </td>     
+        </tr>
+        <tr>
+          <td colspan="3" align="right"><h6>Approve</h6></td>
+          <td>
+            <input  type="checkbox" class="squaredThree" aria-label="Slave input">
+          </td>     
         </tr>
       </tbody>
     </table>
-    <div class="text-right">
-      <input type="submit" class="btn-style" value="Submit">
-    </div>
   </div>
 </div>

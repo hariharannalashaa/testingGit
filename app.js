@@ -59,5 +59,5 @@ Date.prototype.monthNames = [
 ];
 
 Date.prototype.getMonthName = function() {
-    return this.monthNames[this.getMonth()];
+    return this.monthNames[this.getMonth()] + " " + this.getFullYear();
 };
