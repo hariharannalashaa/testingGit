@@ -21,35 +21,36 @@
       <tbody>
         <tr  ng-repeat="row in viewObj.projects">
           <td>
-              <select ng-model="selected" ng-options="x.name for x in viewObj.projectlist">
+              <select ng-model="row.project" ng-options="x.name for x in viewObj.projectlist track by x.id">
               </select>
           </td>
           <td>
-              <select ng-model="selected" ng-options="x.name for x in viewObj.taskList">
+              <select ng-model="row.task" ng-options="x.name for x in viewObj.taskList track by x.id">
               </select>
           </td>
           <td>
-              <input class="descriptionInput" type="text">
+              <input class="descriptionInput" type="text" ng-model="row.description">
           </td>
-          <td ng-repeat="column in viewObj.timeSheet">
-            <input class="timeInput" type="number" name="quantity" min="1" max="5">
+          <td ng-repeat="column in row.times">
+            <input class="timeInput" type="number" name="quantity" min="1" max="5" ng-model="column.hoursSpent">
           </td>
         </tr>
         <tr>
-          <td colspan="3" align="right"><h6>Total Hours</h6></td>
-           <td>
-            
+          <td  colspan="3" align="right"><h6>Total Hours</h6></td>
+          <td ng-repeat="submitColumn in viewObj.totalHours" >
+              1
+          </td>
           </td>     
         </tr>
         <tr>
           <td colspan="3" align="right"><h6>Submit</h6></td>
-          <td>
+          <td ng-repeat="submitColumn in viewObj.submittedMatrix">
             <input  type="checkbox" aria-label="Slave input">
           </td>     
         </tr>
         <tr>
           <td colspan="3" align="right"><h6>Approve</h6></td>
-          <td>
+          <td ng-repeat="approveColumn in viewObj.approveMatrix">
             <input  type="checkbox" class="squaredThree" aria-label="Slave input">
           </td>     
         </tr>

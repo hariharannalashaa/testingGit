@@ -1,268 +1,254 @@
-{
- "distinctProjects": [
-  [{
-   "id": 1,
-   "name": "Nerve24",
-   "code": "NV123",
-   "type": "Dev",
-   "client": {
-    "id": 1,
-    "name": "nerve24",
-    "active": false
+{  
+   "distinctProjects":[  
+      {  
+         "project":{  
+            "id":1,
+            "name":"Nerve24",
+            "code":"NV123",
+            "type":"Dev"
+         },
+         "task":{  
+            "id":2,
+            "name":null,
+            "description":null,
+            "code":null,
+            "maxHours":300,
+            "endDate":null,
+            "type":null,
+            "status":null
+         },
+         "description":"abaaa",
+         "index":1
+      },
+      {  
+         "project":{  
+            "id":1,
+            "name":"Nerve24",
+            "code":"NV123",
+            "type":"Dev"
+         },
+         "task":{  
+            "id":1,
+            "name":null,
+            "description":null,
+            "code":null,
+            "maxHours":200,
+            "endDate":null,
+            "type":null,
+            "status":null
+         },
+         "description":null,
+         "index":2
+      },
+      {  
+         "project":{  
+            "id":1,
+            "name":"Nerve24",
+            "code":"NV123",
+            "type":"Dev"
+         },
+         "task":{  
+            "id":1,
+            "name":null,
+            "description":null,
+            "code":null,
+            "maxHours":200,
+            "endDate":null,
+            "type":null,
+            "status":null
+         },
+         "description":null,
+         "index":3
+      },
+      {  
+         "project":{  
+            "id":1,
+            "name":"Nerve24",
+            "code":"NV123",
+            "type":"Dev"
+         },
+         "task":{  
+            "id":2,
+            "name":null,
+            "description":null,
+            "code":null,
+            "maxHours":300,
+            "endDate":null,
+            "type":null,
+            "status":null
+         },
+         "description":null,
+         "index":4
+      }
+   ],
+   "work":{  
+      "2016-12-04":[  
+         {  
+            "id":4,
+            "person":{  
+               "id":1,
+               "firstName":"siva",
+               "lastName":null,
+               "sex":null,
+               "dateOfJoin":null,
+               "email":null,
+               "phone":0,
+               "status":true,
+               "userName":null,
+               "empId":null,
+               "role":{  
+                  "id":1,
+                  "name":"Super Admin",
+                  "shortName":"Super Admin"
+               }
+            },
+            "project":{  
+               "id":1,
+               "name":"Nerve24",
+               "code":"NV123",
+               "type":"Dev"
+            },
+            "task":{  
+               "id":2,
+               "name":null,
+               "description":null,
+               "code":null,
+               "maxHours":300,
+               "endDate":null,
+               "type":null,
+               "status":null
+            },
+            "description":null,
+            "date":"2016-12-05",
+            "hoursSpent":4.0,
+            "status":"NP",
+            "index":1
+         },
+         {  
+            "id":3,
+            "person":{  
+               "id":1,
+               "firstName":"siva",
+               "lastName":null,
+               "sex":null,
+               "dateOfJoin":null,
+               "email":null,
+               "phone":0,
+               "status":true,
+               "userName":null,
+               "empId":null,
+               "role":{  
+                  "id":1,
+                  "name":"Super Admin",
+                  "shortName":"Super Admin"
+               }
+            },
+            "project":{  
+               "id":1,
+               "name":"Nerve24",
+               "code":"NV123",
+               "type":"Dev"
+            },
+            "task":{  
+               "id":1,
+               "name":null,
+               "description":null,
+               "code":null,
+               "maxHours":200,
+               "endDate":null,
+               "type":null,
+               "status":null
+            },
+            "description":null,
+            "date":"2016-12-05",
+            "hoursSpent":4.0,
+            "status":"NP",
+            "index":2
+         }
+      ],
+      "2016-12-03":[  
+         {  
+            "id":1,
+            "person":{  
+               "id":1,
+               "firstName":"siva",
+               "lastName":null,
+               "sex":null,
+               "dateOfJoin":null,
+               "email":null,
+               "phone":0,
+               "status":true,
+               "userName":null,
+               "empId":null,
+               "role":{  
+                  "id":1,
+                  "name":"Super Admin",
+                  "shortName":"Super Admin"
+               }
+            },
+            "project":{  
+               "id":1,
+               "name":"Nerve24",
+               "code":"NV123",
+               "type":"Dev"
+            },
+            "task":{  
+               "id":1,
+               "name":null,
+               "description":null,
+               "code":null,
+               "maxHours":200,
+               "endDate":null,
+               "type":null,
+               "status":null
+            },
+            "description":null,
+            "date":"2016-12-04",
+            "hoursSpent":4.0,
+            "status":"NP",
+            "index":3
+         },
+         {  
+            "id":2,
+            "person":{  
+               "id":1,
+               "firstName":"siva",
+               "lastName":null,
+               "sex":null,
+               "dateOfJoin":null,
+               "email":null,
+               "phone":0,
+               "status":true,
+               "userName":null,
+               "empId":null,
+               "role":{  
+                  "id":1,
+                  "name":"Super Admin",
+                  "shortName":"Super Admin"
+               }
+            },
+            "project":{  
+               "id":1,
+               "name":"Nerve24",
+               "code":"NV123",
+               "type":"Dev"
+            },
+            "task":{  
+               "id":2,
+               "name":null,
+               "description":null,
+               "code":null,
+               "maxHours":300,
+               "endDate":null,
+               "type":null,
+               "status":null
+            },
+            "description":null,
+            "date":"2016-12-04",
+            "hoursSpent":4.0,
+            "status":"NP",
+            "index":4
+         }
+      ]
    }
-  }, {
-   "id": 2,
-   "name": null,
-   "description": null,
-   "code": null,
-   "maxHours": 300,
-   "endDate": null,
-   "type": null,
-   "status": null
-  }, null, 3],
-  [{
-   "id": 1,
-   "name": "Nerve24",
-   "code": "NV123",
-   "type": "Dev",
-   "client": {
-    "id": 1,
-    "name": "nerve24",
-    "active": false
-   }
-  }, {
-   "id": 1,
-   "name": null,
-   "description": null,
-   "code": null,
-   "maxHours": 200,
-   "endDate": null,
-   "type": null,
-   "status": null
-  }, null, 4],
-  [{
-   "id": 1,
-   "name": "Nerve24",
-   "code": "NV123",
-   "type": "Dev",
-   "client": {
-    "id": 1,
-    "name": "nerve24",
-    "active": false
-   }
-  }, {
-   "id": 1,
-   "name": null,
-   "description": null,
-   "code": null,
-   "maxHours": 200,
-   "endDate": null,
-   "type": null,
-   "status": null
-  }, null, 5],
-  [{
-   "id": 1,
-   "name": "Nerve24",
-   "code": "NV123",
-   "type": "Dev",
-   "client": {
-    "id": 1,
-    "name": "nerve24",
-    "active": false
-   }
-  }, {
-   "id": 2,
-   "name": null,
-   "description": null,
-   "code": null,
-   "maxHours": 300,
-   "endDate": null,
-   "type": null,
-   "status": null
-  }, null, 6]
- ],
- "work": {
-  "2016-12-04T18:30:00.000+0000": [{
-   "id": 4,
-   "person": {
-    "id": 1,
-    "firstName": "siva",
-    "lastName": null,
-    "sex": null,
-    "dateOfJoin": null,
-    "email": null,
-    "phone": 0,
-    "status": true,
-    "userName": null,
-    "empId": null,
-    "role": {
-     "id": 1,
-     "name": "Super Admin",
-     "shortName": "Super Admin"
-    }
-   },
-   "project": {
-    "id": 1,
-    "name": "Nerve24",
-    "code": "NV123",
-    "type": "Dev",
-    "client": {
-     "id": 1,
-     "name": "nerve24",
-     "active": false
-    }
-   },
-   "task": {
-    "id": 2,
-    "name": null,
-    "description": null,
-    "code": null,
-    "maxHours": 300,
-    "endDate": null,
-    "type": null,
-    "status": null
-   },
-   "description": null,
-   "date": "2016-12-05",
-   "hoursSpent": 4.0,
-   "status": "NP",
-   "index": 3
-  }, {
-   "id": 3,
-   "person": {
-    "id": 1,
-    "firstName": "siva",
-    "lastName": null,
-    "sex": null,
-    "dateOfJoin": null,
-    "email": null,
-    "phone": 0,
-    "status": true,
-    "userName": null,
-    "empId": null,
-    "role": {
-     "id": 1,
-     "name": "Super Admin",
-     "shortName": "Super Admin"
-    }
-   },
-   "project": {
-    "id": 1,
-    "name": "Nerve24",
-    "code": "NV123",
-    "type": "Dev",
-    "client": {
-     "id": 1,
-     "name": "nerve24",
-     "active": false
-    }
-   },
-   "task": {
-    "id": 1,
-    "name": null,
-    "description": null,
-    "code": null,
-    "maxHours": 200,
-    "endDate": null,
-    "type": null,
-    "status": null
-   },
-   "description": null,
-   "date": "2016-12-05",
-   "hoursSpent": 4.0,
-   "status": "NP",
-   "index": 4
-  }],
-  "2016-12-03T18:30:00.000+0000": [{
-   "id": 1,
-   "person": {
-    "id": 1,
-    "firstName": "siva",
-    "lastName": null,
-    "sex": null,
-    "dateOfJoin": null,
-    "email": null,
-    "phone": 0,
-    "status": true,
-    "userName": null,
-    "empId": null,
-    "role": {
-     "id": 1,
-     "name": "Super Admin",
-     "shortName": "Super Admin"
-    }
-   },
-   "project": {
-    "id": 1,
-    "name": "Nerve24",
-    "code": "NV123",
-    "type": "Dev",
-    "client": {
-     "id": 1,
-     "name": "nerve24",
-     "active": false
-    }
-   },
-   "task": {
-    "id": 1,
-    "name": null,
-    "description": null,
-    "code": null,
-    "maxHours": 200,
-    "endDate": null,
-    "type": null,
-    "status": null
-   },
-   "description": null,
-   "date": "2016-12-04",
-   "hoursSpent": 4.0,
-   "status": "NP",
-   "index": 5
-  }, {
-   "id": 2,
-   "person": {
-    "id": 1,
-    "firstName": "siva",
-    "lastName": null,
-    "sex": null,
-    "dateOfJoin": null,
-    "email": null,
-    "phone": 0,
-    "status": true,
-    "userName": null,
-    "empId": null,
-    "role": {
-     "id": 1,
-     "name": "Super Admin",
-     "shortName": "Super Admin"
-    }
-   },
-   "project": {
-    "id": 1,
-    "name": "Nerve24",
-    "code": "NV123",
-    "type": "Dev",
-    "client": {
-     "id": 1,
-     "name": "nerve24",
-     "active": false
-    }
-   },
-   "task": {
-    "id": 2,
-    "name": null,
-    "description": null,
-    "code": null,
-    "maxHours": 300,
-    "endDate": null,
-    "type": null,
-    "status": null
-   },
-   "description": null,
-   "date": "2016-12-04",
-   "hoursSpent": 4.0,
-   "status": "NP",
-   "index": 6
-  }]
- }
 }
