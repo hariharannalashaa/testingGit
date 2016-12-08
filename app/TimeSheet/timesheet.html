@@ -31,14 +31,14 @@
           <td>
               <input class="descriptionInput" type="text" ng-model="row.description">
           </td>
-          <td ng-repeat="column in row.times">
-            <input class="timeInput" type="number" name="quantity" min="1" max="5" ng-model="column.hoursSpent">
+          <td ng-repeat="(key,column) in row.times">
+            <input class="timeInput" type="number" ng-model="column.hoursSpent" ng-init="viewObj.initTotal(key,column)" ng-blur="viewObj.updateTotal(key,column.hoursSpent,column.oldValue)" ng-focus="column.oldValue=column.hoursSpent">
           </td>
         </tr>
         <tr>
           <td  colspan="3" align="right"><h6>Total Hours</h6></td>
-          <td ng-repeat="submitColumn in viewObj.totalHours" >
-              1
+          <td ng-repeat="total in viewObj.totalHours" >
+              {{total.sum}}
           </td>
           </td>     
         </tr>

@@ -56,9 +56,21 @@ var timesheetCtrl = function(TimeSheetFactory,timeSheetData,projects,tasks){
         that.submittedMatrix = angular.copy(that.timeSheet);
     }
     
+    function initTotal(key,cellData){
+       cellData.hoursSpent = cellData.hoursSpent || 0;    
+       if(that.totalHours[key].sum == undefined || that.totalHours[key].sum == null)
+            that.totalHours[key].sum = 0;
+            that.totalHours[key].sum = that.totalHours[key].sum  +  cellData.hoursSpent;
+    }
+    
+    function updateTotal(key,newValue,old){
+       that.totalHours[key].sum = that.totalHours[key].sum  - old + newValue;
+    }
     
     angular.extend(this, {
-       "changeMonth" : changeMonth
+       "changeMonth" : changeMonth,
+        "initTotal" : initTotal,
+        "updateTotal":updateTotal
     });
 };
 
